@@ -102,15 +102,22 @@
 
 // video 20 - pengulangan (for) -
 // latihan angkot 2
-var jmlAngkot = 10;
-var angkotBeroperasi = 6;
-var noAngkot = 1;
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// var noAngkot = 1;
 
-while (noAngkot <= angkotBeroperasi) {
-  console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
-  noAngkot++;
-}
+// while (noAngkot <= angkotBeroperasi) {
+//   console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+//   noAngkot++;
+// }
 
-for (var noAngkot = angkotBeroperasi + 1; noAngkot <= jmlAngkot; noAngkot++) {
-  console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.");
+// for (var noAngkot = angkotBeroperasi + 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.");
+// }
+
+// video 21 - pengondisian (if else) -
+
+var angka = 1;
+if (angka === 1) {
+  alert("kamu memasukkan angka 1");
 }
