@@ -116,8 +116,119 @@
 // }
 
 // video 21 - pengondisian (if else) -
+// var angka = prompt("masukkan angka");
+// if (angka % 2 === 1) {
+//   alert("kamu memasukkan angka ganjil");
+// } else {
+//   alert("kamu memasukkan angka genap");
+// }
 
-var angka = 1;
-if (angka === 1) {
-  alert("kamu memasukkan angka 1");
+// latihan angkot 3
+// var noAngkot;
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " beroperasi dengan baik");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi");
+//   }
+// }
+
+// video 22 - pengondisian (else if) -
+// var angka = prompt("masukkan angka");
+// if (angka % 2 === 1) {
+//   alert("kamu memasukkan angka ganjil");
+// } else if (angka % 2 === 0) {
+//   alert("kamu memasukkan angka genap");
+// } else {
+//   alert("yang anda masukkan bukan angka");
+// }
+
+// latihan angkot 4
+// var noAngkot;
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " beroperasi dengan baik");
+//   } else if (noAngkot === 8) {
+//     console.log("angkot No. " + noAngkot + " sedang lembur.");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi");
+//   }
+// }
+
+// video 23 - latihan pengondisian -
+// latihan angkot 5
+// var noAngkot;
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+// for (noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi) {
+//     console.log("Angkot No. " + noAngkot + " beroperasi dengan baik");
+//   } else if (noAngkot === 8 || noAngkot === 10) {
+//     console.log("angkot No. " + noAngkot + " sedang lembur.");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi");
+//   }
+// }
+
+// latihan angkot 6
+// var jmlAngkot = 10;
+// var angkotBeroperasi = 6;
+
+// for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+//   if (noAngkot <= angkotBeroperasi && noAngkot !== 5) {
+//     console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+//   } else if (noAngkot === 7 || noAngkot === 10 || noAngkot === 5) {
+//     console.log("Angkot No. " + noAngkot + " sedang lembur.");
+//   } else {
+//     console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi");
+//   }
+// }
+
+// video 24 - pengondisian (switch) -
+// case 1
+// var angka = prompt("masukkan angka :");
+
+// switch (angka) {
+//   case "1":
+//     alert("anda memasukkan angka 1");
+//     break;
+//   case "2":
+//     alert("anda memasukkan angka 2");
+//     break;
+//   case "3":
+//     alert("anda memasukkan angka 3");
+//     break;
+//   default:
+//     alert("anda memasukkan angka yang salah");
+// }
+
+// case 2
+// var item = prompt("masukkan salah satu nama makanan berikut \n (nasi,daging,susu,burger,softdrink)");
+
+// switch (item) {
+//   case "nasi":
+//   case "daging":
+//   case "susu":
+//     alert("makanan / minuman sehat");
+//     break;
+//   case "burger":
+//   case "softdrink":
+//     alert("makanan / minuman tidak sehat");
+//     break;
+//   default:
+//     alert("anda memasukkan nama makanan/minuman yang salah");
+// }
+
+// video 25 - pengulangan pengondisian bersarang -
+var s = "";
+for (var i = 1; i <= 10; i++) {
+  for (var e = 1; e <= i; e++) {
+    s += "*";
+  }
+  s += "\n";
 }
+console.log(s);
