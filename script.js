@@ -224,11 +224,11 @@
 // }
 
 // video 25 - pengulangan pengondisian bersarang -
-var s = "";
-for (var i = 1; i <= 10; i++) {
-  for (var e = 1; e <= i; e++) {
-    s += "*";
-  }
-  s += "\n";
-}
-console.log(s);
+// var s = "";
+// for (var i = 10; i > 0; i--) {
+//   for (var e = 0; e < i; e++) {
+//     s += "*";
+//   }
+//   s += "\n";
+// }
+// console.log(s);
