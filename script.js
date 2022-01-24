@@ -258,39 +258,53 @@
 // video 26 - membuat game suit jawa -
 
 // menangkap pilihan player
-var p = prompt("pilih gajah, orang, / semut");
-// menangkap pilihan computer
-// membangkitkan bilangan random
-var comp = Math.random();
-var tanya = true;
-while (tanya) {
-  if (comp <= 0.34) {
-    comp = "gajah";
-  } else if (comp > 0.34 && comp <= 0.67) {
-    comp = "orang";
-  } else {
-    comp = "semut";
-  }
-  var hasil = "";
-  // menentukan rules
-  if (p == comp) {
-    hasil = "Seri";
-  } else if (p == "gajah") {
-    // if (comp == "orang") {
-    //   hasil = "Menang";
-    // } else {
-    //   hasil = "kalah";
-    // }
-    hasil = comp == "orang" ? "menang" : "kalah";
-  } else if (p == "orang") {
-    hasil = comp == "semut" ? "menang" : "kalah";
-  } else if (p == "semut") {
-    hasil = comp == "gajah" ? "menang" : "kalah";
-  } else {
-    hasil = "memasukkan pilihan yang salah";
-  }
-  // tampilkan hasilnya
-  alert("anda memilih " + p + " computer memilih " + comp + ", maka anda " + hasil);
-  tanya = confirm("lagi");
+// var p = prompt("pilih gajah, orang, / semut");
+// // menangkap pilihan computer
+// // membangkitkan bilangan random
+// var comp = Math.random();
+// var tanya = true;
+// while (tanya) {
+//   if (comp <= 0.34) {
+//     comp = "gajah";
+//   } else if (comp > 0.34 && comp <= 0.67) {
+//     comp = "orang";
+//   } else {
+//     comp = "semut";
+//   }
+//   var hasil = "";
+//   // menentukan rules
+//   if (p == comp) {
+//     hasil = "Seri";
+//   } else if (p == "gajah") {
+//     // if (comp == "orang") {
+//     //   hasil = "Menang";
+//     // } else {
+//     //   hasil = "kalah";
+//     // }
+//     hasil = comp == "orang" ? "menang" : "kalah";
+//   } else if (p == "orang") {
+//     hasil = comp == "semut" ? "menang" : "kalah";
+//   } else if (p == "semut") {
+//     hasil = comp == "gajah" ? "menang" : "kalah";
+//   } else {
+//     hasil = "memasukkan pilihan yang salah";
+//   }
+//   // tampilkan hasilnya
+//   alert("anda memilih " + p + " computer memilih " + comp + ", maka anda " + hasil);
+//   tanya = confirm("lagi");
+// }
+// alert("terima kasih sudah bermain");
+// membangkitkan pilihan player
+var p = prompt("tebak angka antara 1-10");
+// membangkitkan pilihan computer
+var comp = Math.floor(Math.random() * 10);
+var salah = false;
+var hasil = "";
+console.log(comp);
+// menentukan rules
+
+if (p == comp) {
+  alert("kamu benar");
+} else if (p < comp) {
+  for()
 }
-alert("terima kasih sudah bermain");
