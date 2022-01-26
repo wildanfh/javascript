@@ -294,17 +294,92 @@
 //   tanya = confirm("lagi");
 // }
 // alert("terima kasih sudah bermain");
-// membangkitkan pilihan player
-var p = prompt("tebak angka antara 1-10");
-// membangkitkan pilihan computer
-var comp = Math.floor(Math.random() * 10);
-var salah = false;
-var hasil = "";
-console.log(comp);
-// menentukan rules
 
-if (p == comp) {
-  alert("kamu benar");
-} else if (p < comp) {
-  for()
+// // membangkitkan pilihan player
+// var p = prompt("tebak angka antara 1-10");
+// // membangkitkan pilihan computer
+// var comp = Math.floor(Math.random() * 10 + 1);
+// console.log(comp);
+
+// // menentukan rules
+
+// let limit = 3;
+// const tes = () => {
+//   limit--;
+//   const data = prompt("angka :");
+//   if (limit == 0) {
+//     alert("you lose");
+//   } else {
+//     cek(p);
+//   }
+// };
+// const cek = (data) => {
+//   if (data == comp) {
+//     alert("you win");
+//   } else {
+//     tes();
+//   }
+// };
+// // menampilkan hasil
+// tes();
+
+// // video 27 - function (intro) -
+// function tambah(a, b) {
+//   var plus;
+//   plus = a + b;
+
+//   return plus;
+// }
+
+// console.log(tambah(10, 8));
+
+// video 28 - function (membuat dan menjalankan function) -
+// function volDuKub(a, b) {
+//   var kubusA;
+//   var kubusB;
+//   kubusA = a * a * a;
+//   kubusB = b * b * b;
+//   ab = kubusA + kubusB;
+
+//   return ab;
+// }
+
+// console.log(volDuKub(3, 8));
+
+// video 29 - function (parameter dan argument) -
+// function jmlDuaBil(a, b) {
+//   return a + b;
+// }
+// var a = parseInt(prompt("masukkan nilai 1 :"));
+// var b = parseInt(prompt("masukkan nilai 2 :"));
+// var hasil = jmlDuaBil(a, b);
+// alert(hasil);
+
+// function jmlDuaBil(a, b) {
+//   return a + b;
+// }
+
+// function kaliDuaBil(a, b) {
+//   return a * b;
+// }
+
+// var hasil = kaliDuaBil(jmlDuaBil(6, 3), jmlDuaBil(2, 4));
+// // var hasil = jmlDuaBil(20, 10, 30);
+// console.log(hasil);
+
+// function tambah() {
+//   return arguments;
+// }
+
+// console.log(tambah(1, 2, 3, "ok", true));
+
+function tambah() {
+  var hasil = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    hasil += arguments[i];
+  }
+  return hasil;
 }
+
+var x = tambah(1, 2, 3, 4, 5, 6, 7, 9, 8, 8);
+console.log(x);
