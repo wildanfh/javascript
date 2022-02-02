@@ -749,9 +749,32 @@
 // // mengembalikan object yang baru dibuat
 
 // video 44 - object (latihan) -
-function Latihan(sopir, trayek, penumpang, kas) {
-  this.sopir = sopir;
-  this.trayek = trayek;
-  this.penumpang = penumpang;
-  this.kas = kas;
-}
+// function Angkot(sopir, trayek, penumpang, kas) {
+//   this.sopir = sopir;
+//   this.trayek = trayek;
+//   this.penumpang = penumpang;
+//   this.kas = kas;
+
+//   this.penumpangNaik = function (namaPenumpang) {
+//     this.penumpang.push(namaPenumpang);
+//     return this.penumpang;
+//   };
+
+//   this.penumpangTurun = function (namaPenumpang, bayar) {
+//     if (this.penumpang.length === 0) {
+//       console.log("angkot masih kosong");
+//       return false;
+//     } else {
+//       for (var i = 0; i < this.penumpang.length; i++) {
+//         if (this.penumpang[i] == namaPenumpang) {
+//           this.penumpang[i] = undefined;
+//           this.kas += bayar;
+//           return this.penumpang;
+//         }
+//       }
+//     }
+//   };
+// }
+
+// angkot1 = new Angkot("gubenk", ["cibiru", "ciputat"], [], 0);
+// angkot2 = new Angkot("faris", ["tingkir", "tamansari"], [], 0);
